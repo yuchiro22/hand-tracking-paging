@@ -28,7 +28,7 @@ class CameraViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        drawOverlay.frame = view.layer.bounds
+        drawOverlay.frame = CGRect(x: 0, y: 0, width: view.layer.bounds.width/2, height: view.layer.bounds.height/2)
         drawOverlay.lineWidth = 5
         drawOverlay.backgroundColor = #colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 0.5).cgColor
         drawOverlay.strokeColor = #colorLiteral(red: 0.6, green: 0.1, blue: 0.3, alpha: 1).cgColor
